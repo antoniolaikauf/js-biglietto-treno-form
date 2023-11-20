@@ -4,26 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form ticket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
+
 </head>
 <body>
-    
     <div>
-        <input type="text" id="nome" placeholder="inserisci nome">
-        <input type="text" id="chilometri" placeholder="inserisci chilometri da percorrere">
-        <input type="text" id="età" placeholder="inserisci età">
-    </div>
-    <div>
-        <button id="genera-biglietto">
-            genera
-        </button>
-        <button id="annulla-biglietto">
-            annulla
-        </button>
-    </div>
-    <div id="risultato">
+        <h1> CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <div class="container">
+            <div class="row ">
+                <div class="col-4">
+                    <h4>inserisci nome</h4>
+                    <input type="text" id="nome" placeholder="inserisci nome">
+                </div>
+                <div class="col-4">
+                    <h4>inserisci chilometri </h4>
+                    <input type="text" id="chilometri" placeholder="inserisci chilometri da percorrere">
+                </div>
+                <div class="col-4">
+                    <h4>inserisci età</h4>
+                    <input type="text" id="età" placeholder="inserisci età">
+                </div>
+            </div>
+            <div class="row">
+               <div class="col-12">
+                    <button id="genera-biglietto">
+                        genera
+                    </button>
+                    <button id="annulla-biglietto">
+                        annulla
+                    </button>
+               </div>
+            </div>
+        </div>
+        <h1>il tuo biglietto</h1>
+        <div class="container">
+            <h3>dettagli del passeggero</h3>
+            <div class="row ">
+                <div class="col-3">
+                    <div>
+                        nome passeggero
+                    </div>
+                </div>
+                <div class="col-3">
+                    offera
+                </div>
+                <div class="col-2">carrozza</div>
+                <div class="col-2">codice</div>
+                <div class="col-2">
+                    costo biglietto
+                    <div id="risultato">
 
+                    </div>
+                </div>
+           
+            </div>
+        </div>
     </div>
+   
     <script src="JS/index.js"></script>
 </body>
 </html>
+
+<!-- <div>
+    <input type="text" id="nome" placeholder="inserisci nome">
+    <input type="text" id="chilometri" placeholder="inserisci chilometri da percorrere">
+    <input type="text" id="età" placeholder="inserisci età">
+</div>
+<div>
+    <button id="genera-biglietto">
+        genera
+    </button>
+    <button id="annulla-biglietto">
+        annulla
+    </button>
+</div>
+<div id="risultato">
+
+</div> -->

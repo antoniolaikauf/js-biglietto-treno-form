@@ -4,4 +4,13 @@
 
 h1{
     text-align: center;
+    color: white;
+}
+
+body{
+    background-color: #b91450;
+}
+
+h4{
+    color: #b91450 ;
 }

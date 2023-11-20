@@ -8,22 +8,21 @@
     <link rel="stylesheet" href="css/index.css">
 
 </head>
-<body>
+<body id="bg-color">
     <div>
         <h1> CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-        <div class="container">
-            <div class="row text-center ">
+        <div class="container bg-light rounded py-3">
+            <div class="row text-center">
                 <div class="col-4">
-                    <h4>inserisci nome</h4>
+                    <h4>nome e cognome</h4>
                     <input type="text" id="nome" placeholder="inserisci nome">
                 </div>
                 <div class="col-4">
                     <h4>inserisci chilometri </h4>
-                    <input type="text" id="chilometri" placeholder="inserisci chilometri da percorrere">
+                    <input type="text" id="chilometri" placeholder="inserisci chilometri ">
                 </div>
                 <div class="col-4">
                     <h4>inserisci età</h4>
-                    <!-- <input type="text" id="età" placeholder="inserisci età"> -->
                     <select name="" id="età">
                         <option value="minorenne">minorenne</option>
                         <option value="maggiorenne">maggiorenne</option>
@@ -32,7 +31,7 @@
                 </div>
             </div>
             <div class="row text-center ">
-               <div class="col-12">
+               <div class="col-12 py-3">
                     <button id="genera-biglietto">
                         genera
                     </button>
@@ -44,19 +43,32 @@
         </div>
         <h1>il tuo biglietto</h1>
         <div id="risultato">
-            <div class="container">
+            <div class="container bg-light rounded ">
                 <h3>dettagli del passeggero</h3>
-                <div class="row ">
-                    <div class="col-3">
+                <div class="row p-3">
+                    <div class="col-3 bg-secondary">
                         <div>
                             nome passeggero
+                            <div id="nome-passeggero">
+
+                            </div>
                         </div>
                     </div>
                     <div class="col-3">
-                        offera
+                       offerta 
+                       <div id="fascia-età"></div>
                     </div>
-                    <div class="col-2">carrozza</div>
-                    <div class="col-2">codice</div>
+                    <div class="col-2">
+                        carrozza 
+                        <div id="n-carrozza">
+
+                        </div>
+                    </div>
+                    <div class="col-2">codice 
+                        <div id="codicecp">
+                            
+                        </div>
+                    </div>
                     <div class="col-2">
                         costo biglietto
                         <div id="costo-biglietto">

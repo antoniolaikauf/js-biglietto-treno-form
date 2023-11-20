@@ -30,10 +30,17 @@ generazione.addEventListener("click", function() {
     }
     prezzo = prezzo - sconto;
     // console.log(prezzo, sconto);
-    // far vedere il prezzo del biglietto all'utente con evento
+    // numero carrozza
+    let carrozza= Math.floor((Math.random() * 100))
+    // numero codice cp
+    let numerocp=Math.floor((Math.random() * 10000))
+    // elementi aggiutni dentro html al funzionamento dell'evento
     document.getElementById("costo-biglietto").innerHTML=prezzo.toFixed(2);
+    document.getElementById("nome-passeggero").innerHTML=nomeUtente.value;
+    document.getElementById("fascia-età").innerHTML=age;
+    document.getElementById("n-carrozza").innerHTML=carrozza;
+    document.getElementById("codicecp").innerHTML=numerocp;
     document.getElementById("risultato").style.display="block";
-
 })
 
 

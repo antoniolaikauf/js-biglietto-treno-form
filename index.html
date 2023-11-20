@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form ticket</title>
+    <!-- link bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- link css -->
     <link rel="stylesheet" href="css/index.css">
 
 </head>
 <body id="bg-color"> <!--sfondo colore del body-->
-    <div>
         <h1> CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1> <!--inizio calcolo del biglietto in base età e km-->
         <div class="container bg-light rounded py-3 shadow">
             <div class="row text-center">
@@ -32,16 +33,14 @@
             </div>
             <div class="row text-center "> <!--bottoni per generare il biglietto-->
                <div class="col-12 py-3">
-                    <button id="genera-biglietto">
-                        genera
-                    </button>
-                    <button id="annulla-biglietto">
-                        annulla
-                    </button>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn" id="genera-biglietto" >genera</button>
+                        <button type="button" class="btn"  id="annulla-biglietto">annulla</button>
+                    </div>
                </div>
             </div>
         </div>
-        <h1>IL TUA BIGLIETTO</h1>
+        <h1>IL TUO BIGLIETTO</h1>
         <div id="risultato-biglietto"> <!--composizione del biglietto-->
             <div class="container bg-light rounded shadow py-3">
                 <h5>DETTAGLIO PASSEGGERI</h5>
@@ -89,7 +88,7 @@
                 </div>
             </div>
         </div>
-    </div>
-    <script src="JS/index.js"></script>
+        <!-- link script -->
+    <script type="text/javascript" src="JS/index.js"></script>
 </body>
 </html>

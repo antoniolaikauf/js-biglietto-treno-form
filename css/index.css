@@ -7,14 +7,8 @@ body{
     display: none;
 }
 /* caratteristiche tag per caratteristiche dell'utente  */
-input, select, button{
+input, select{
     border:1px solid  #b91450;
-}
-
-button{
-    background-color: lightslategray;
-    color: #b91450;
-    font-size: 20px;
 }
 /* caratteristiche titoli e sottotitoli */
 h1{
@@ -34,4 +28,11 @@ h4{
 /* modicfiche a tag di bootstrap */
 #risultato-biglietto h5{
     margin-bottom: 0px;
+}
+
+.btn-group>button{
+    color: #b91450;
+    border:1px solid #b91450;
+    background-color: #a2cdde;
+    font-weight: 800;
 }

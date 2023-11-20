@@ -11,6 +11,7 @@ let nomeUtente = document.querySelector("#nome");
 let chilometriUtente = document.querySelector("#chilometri");
 let ageUtente = document.querySelector("#età");
 
+
 const generazione = document.querySelector("#genera-biglietto")
 generazione.addEventListener("click", function() {
     let chilometriPercorrere = parseInt(chilometriUtente.value);
@@ -18,6 +19,7 @@ generazione.addEventListener("click", function() {
     // console.log(chilometriPercorrere, age);
     let prezzo= chilometriPercorrere * 0.21;
     // console.log(prezzo);
+    // calcolare prezzo in base età e km percorsi
     let sconto;
     if (age < 18) {
         sconto = ((prezzo / 100) * 20)
@@ -28,11 +30,14 @@ generazione.addEventListener("click", function() {
     }
     prezzo = prezzo - sconto;
     // console.log(prezzo, sconto);
+    // far vedere il prezzo del biglietto all'utente co evento
     document.getElementById("risultato").innerHTML=prezzo;
+    document.getElementById("risultato").style.display="block";
+
 })
 
 
-
-
-// calcolare prezzo in base età e km percorsi
-// far vedere il prezzo del biglietto all'utente co evento
+const cancellazione=document.querySelector("#annulla-biglietto");
+cancellazione.addEventListener("click", function () {
+    document.getElementById("risultato").style.display="none";
+})

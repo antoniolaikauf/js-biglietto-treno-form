@@ -3,7 +3,7 @@ body{
 }
 
 /* caratteristiche della composizione biglietto */
-#risultato{
+#risultato-biglietto{
     display: none;
 }
 /* caratteristiche tag per caratteristiche dell'utente  */
@@ -26,12 +26,12 @@ h4{
     color: #b91450 ;
 }
 
-#risultato strong{
+#risultato-biglietto strong{
     margin-bottom: 30px;
     font-size: 20px;
     display: inline-block;
 }
 /* modicfiche a tag di bootstrap */
-#risultato h5{
+#risultato-biglietto h5{
     margin-bottom: 0px;
 }

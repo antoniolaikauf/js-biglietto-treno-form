@@ -46,12 +46,12 @@ generazione.addEventListener("click", function() {
     // numerocp
     document.getElementById("codicecp").innerHTML=numerocp;
     // aggiunta delle caratteristiche del biglietto
-    document.getElementById("risultato").style.display="block";
+    document.getElementById("risultato-biglietto").style.display="block";
 })
 
 // evento per annullare il biglietto
 const cancellazione=document.querySelector("#annulla-biglietto");
 cancellazione.addEventListener("click", function () {
     // aggiunta delle caratteristiche del biglietto
-    document.getElementById("risultato").style.display="none";
+    document.getElementById("risultato-biglietto").style.display="none";
 })

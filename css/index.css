@@ -1,16 +1,37 @@
+body{
+    background-color: #b91450;
+}
+
+/* caratteristiche della composizione biglietto */
 #risultato{
     display: none;
 }
+/* caratteristiche tag per caratteristiche dell'utente  */
+input, select, button{
+    border:1px solid  #b91450;
+}
 
+button{
+    background-color: lightslategray;
+    color: #b91450;
+    font-size: 20px;
+}
+/* caratteristiche titoli e sottotitoli */
 h1{
     text-align: center;
     color: white;
 }
 
-body{
-    background-color: #b91450;
-}
-
 h4{
     color: #b91450 ;
+}
+
+#risultato strong{
+    margin-bottom: 30px;
+    font-size: 20px;
+    display: inline-block;
+}
+/* modicfiche a tag di bootstrap */
+#risultato h5{
+    margin-bottom: 0px;
 }

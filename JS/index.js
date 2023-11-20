@@ -31,7 +31,7 @@ generazione.addEventListener("click", function() {
     prezzo = prezzo - sconto;
     // console.log(prezzo, sconto);
     // far vedere il prezzo del biglietto all'utente co evento
-    document.getElementById("risultato").innerHTML=prezzo;
+    document.getElementById("costo-biglietto").innerHTML=prezzo;
     document.getElementById("risultato").style.display="block";
 
 })

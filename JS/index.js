@@ -31,9 +31,9 @@ generazione.addEventListener("click", function() {
     prezzo = prezzo - sconto;
     // console.log(prezzo, sconto);
     // numero carrozza fatto randomico
-    let carrozza= Math.floor((Math.random() * 100))
+    let carrozza= Math.floor(Math.random() * 100 +1)
     // numero codice cp fatto randomico
-    let numerocp=Math.floor((Math.random() * 10000))
+    let numerocp=Math.floor(Math.random() * 10000)
     // elementi aggiutni dentro html al funzionamento dell'evento
     // prezzo biglietto
     document.getElementById("costo-biglietto").innerHTML=prezzo.toFixed(2); 
@@ -54,7 +54,9 @@ const cancellazione=document.querySelector("#annulla-biglietto");
 cancellazione.addEventListener("click", function () {
     // aggiunta delle caratteristiche del biglietto
     document.getElementById("risultato-biglietto").style.display="none";
-    document.getElementById("nome").value = "";
-    document.getElementById("chilometri").value = "";
-    document.getElementById("età").value = "";
+    nomeUtente.value="";
+    chilometriUtente.value="";
+    ageUtente.value="";
 })
+
+// sistemato correzzioni 
